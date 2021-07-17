@@ -73,12 +73,14 @@ Brick Breaker is an Terminal game inspired from [the old brick breaker](https://
     - Blue brick - Need 2 hits to break :v:
     - Yellow brick - Need 3 hits to break :ok_hand:
     - White brick - Unbreakable :muscle:
+    - Rainbow brick - Changes color untill it got hit 
   - Power ups - There are 5 types of powerups each stands for some time
     -  EP - Expand paddle
     -  SP - Shrink paddle
     -  FB - Fast ball
     -  TB - Thru-Ball (breaks any brick at a time)
     -  PG - Paddle Grab (Paddle can grab the ball and released on its will)
+    -  SP - Shooting Paddle 
   - Score
     - Red brick gives 5 Points
     - Blue brick gives 10 Points
@@ -86,13 +88,24 @@ Brick Breaker is an Terminal game inspired from [the old brick breaker](https://
     - White brick gives 0 Points (even by TB :pensive: )
   - Lives
   - Time
+  - Sound
+  - BOSS :imp:
+    - UFO which follows the paddle
+    - Drops bombs on regular time interval
+    - UFO health decreases on hit by a ball
+    - Spawns 2 layers of defensive bricks around it
++ ### Features
+    - MultiLevel Game
+    - Elastic Collision with bricks, paddle, and boundaries.
+    - Brick streanth decreases by 1 when hit (except the unbreakable ones)
+    - Gravity fall simulation for powerups fall.
 + ### Controls
   - 'a' - To move the paddle left
   - 'd' - To move the paddle right
   - 'q' - To quit the game
   - '[SPACE]' - To release the ball from paddle
-  - 'p' - To pause the game
-  - 'f' - To move the game one-step ahead when PAUSED (note when passed the other controls excepts 'f' wont work)
+  - 'p' - To pause/resume the game
+  - 'f' - To move the game one-step ahead when PAUSED (Note: when paused, the other controls wont work, except 'f')
 
 + ### Files
   - background.py - Python file that contains the Background and Boundaries code
